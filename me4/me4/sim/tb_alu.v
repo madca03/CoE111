@@ -1,0 +1,168 @@
+`timescale 1ns/1ps
+module tb_alu;
+	reg [7:0] opA;
+	reg [7:0] opB;
+	reg [2:0] sel;
+	wire [7:0] res;
+
+	alu A1(.opA(opA), .opB(opB), .sel(sel), .res(res));
+
+	initial begin
+		$dumpfile("out.vcd");
+		$dumpvars;
+		//$vcdplusfile("tb_alu.vpd");
+    //$vcdpluson;
+		//$sdf_annotate("../mapped/alu_mapped.sdf", A1);
+
+		// 2's complement addition
+		sel = 3'b000;
+		opA = 8'hFD;
+		opB = 8'hFC;
+		#10
+		opA = 3;
+		opB = 5;
+		#10
+		opA = 3;
+		opB = -5;
+
+		// 2's complement subtraction
+		#10
+		sel = 3'b001;
+		opA = 5;
+		opB = 7;
+		#10
+		opA = 7;
+		opB = 5;
+		#10
+		opA = -5;
+		opB = -7;
+		#10
+		opA = -7;
+		opB = -5;
+		#10
+		opA = -5;
+		opB = 7;
+		#10
+		opA = 5;
+		opB = -7;
+
+
+		// 1's complement addition
+		#10
+		sel = 3'b010;
+		// -3 + (-4) = -7
+		opA = 8'hFC;
+		opB = 8'hFB;
+		#10
+		// 7 + 3 = 10
+		opA = 8'h07;
+		opB = 8'h03;
+		#10
+		// 3 + (-4) = -1
+		opA = 8'h03;
+		opB = 8'hFB;
+		#10
+		// (-3) + 4 = 1
+		opA = 8'hFC;
+		opB = 8'h04;
+
+
+		// 1's complement subtraction
+		#10
+		sel = 3'b011;
+		// -3 - (-4) = 1
+		opA = 8'hFC;
+		opB = 8'hFB;
+		#10
+		// 7 - 3 = 4
+		opA = 8'h07;
+		opB = 8'h03;
+		#10
+		// 3 - (-4) = 7
+		opA = 8'h03;
+		opB = 8'hFB;
+		#10
+		// (-3) - 4 = -7
+		opA = 8'hFC;
+		opB = 8'h04;
+
+		// sign-magnitude addition
+		#10
+		sel = 3'b100;
+		// -3 + (-4) = -7
+		opA = 8'h83;
+		opB = 8'h84;
+		#10
+		// 7 + 3 = 10
+		opA = 8'h07;
+		opB = 8'h03;
+		#10
+		// 3 + (-4) = -1
+		opA = 8'h03;
+		opB = 8'h84;
+		#10
+		// (-3) + 4 = 1
+		opA = 8'h83;
+		opB = 8'h04;
+
+		// sign-magnitude subtraction
+		#10
+		sel = 3'b101;
+		// -3 - (-4) = 1
+		opA = 8'h83;
+		opB = 8'h84;
+		#10
+		// 7 - 3 = 4
+		opA = 8'h07;
+		opB = 8'h03;
+		#10
+		// 3 - (-4) = 7
+		opA = 8'h03;
+		opB = 8'h84;
+		#10
+		// (-3) - 4 = -7
+		opA = 8'h83;
+		opB = 8'h04;
+
+		// and operation
+		#10
+		sel = 3'b110;
+
+		opA = 8'h83;
+		opB = 8'h84;
+		#10
+
+		opA = 8'h07;
+		opB = 8'h03;
+		#10
+
+		opA = 8'h03;
+		opB = 8'h84;
+		#10
+
+		opA = 8'h83;
+		opB = 8'h04;
+
+		// or operation
+		#10
+		sel = 3'b111;
+
+		opA = 8'h83;
+		opB = 8'h84;
+		#10
+
+		opA = 8'h07;
+		opB = 8'h03;
+		#10
+
+		opA = 8'h03;
+		opB = 8'h84;
+		#10
+
+		opA = 8'h83;
+		opB = 8'h04;
+
+		#10
+		$finish;
+	end
+endmodule

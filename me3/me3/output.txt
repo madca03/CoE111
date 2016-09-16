@@ -1,0 +1,323 @@
+Loading verilog file '/eeei/home/user/student/Documents/CoE111_201358222/me3/rtl/mult.v'
+Detecting input file type automatically (-rtl or -netlist).
+Warning: Overwriting design file '/eeei/home/user/student/Documents/CoE111_201358222/me3/rtl/mult'. (DDB-24)
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /eeei/home/user/student/Documents/CoE111_201358222/me3/rtl/mult.v
+Presto compilation completed successfully.
+Current design is now '/eeei/home/user/student/Documents/CoE111_201358222/me3/rtl/mult.db:mult'
+Loaded 1 design.
+Current design is 'mult'.
+Current design is 'mult'.
+
+  Linking design 'mult'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  mult                        /eeei/home/user/student/Documents/CoE111_201358222/me3/rtl/mult.db
+  saed90nm_typ (library)      /eeei/home/user/student/Documents/CoE111_201358222/me3/lib/saed90nm_typ.db
+
+ 
+****************************************
+check_design summary:
+Version:     I-2013.12
+Date:        Tue Sep 13 08:58:08 2016
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                               3
+    Cells do not drive (LINT-1)                                     3
+--------------------------------------------------------------------------------
+
+Warning: In design 'mult', cell 'B_4' does not drive any nets. (LINT-1)
+Warning: In design 'mult', cell 'B_5' does not drive any nets. (LINT-1)
+Warning: In design 'mult', cell 'B_6' does not drive any nets. (LINT-1)
+Warning: Creating virtual clock named 'vclk' with no sources. (UID-348)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Information: Changed wire load model for 'DW01_sub_width16' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_1_15_16' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_14_14_15' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width14' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_13_13_14' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width13' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_12_12_13' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_11_11_12' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width11' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_10_10_11' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width10' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_9_9_10' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_7_8_9' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_1_7_7' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_1_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Updating design information... (UID-85)
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+Warning: there are 16 input ports that only have partial input delay specified. (TIM-212)
+--------------------
+a_in[7]
+a_in[6]
+a_in[5]
+a_in[4]
+a_in[3]
+a_in[2]
+a_in[1]
+a_in[0]
+b_in[7]
+b_in[6]
+b_in[5]
+b_in[4]
+b_in[3]
+b_in[2]
+b_in[1]
+b_in[0]
+
+Information: There are 3 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'mult'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'mult_DW01_sub_0'
+  Processing 'mult_DW01_sub_1'
+  Processing 'mult_DW01_sub_2'
+  Processing 'mult_DW01_add_0'
+  Processing 'mult_DW01_add_1'
+  Processing 'mult_DW01_add_2'
+  Processing 'mult_DW01_add_3'
+  Processing 'mult_DW01_add_4'
+  Processing 'mult_DW01_add_5'
+  Processing 'mult_DW01_add_6'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:00    3364.7      0.00       0.0       0.0                          
+    0:00:00    3364.7      0.00       0.0       0.0                          
+    0:00:00    3364.7      0.00       0.0       0.0                          
+    0:00:00    3364.7      0.00       0.0       0.0                          
+    0:00:00    3364.7      0.00       0.0       0.0                          
+    0:00:00    3095.2      0.00       0.0       0.0                          
+    0:00:00    3095.2      0.00       0.0       0.0                          
+    0:00:00    3095.2      0.00       0.0       0.0                          
+    0:00:00    3095.2      0.00       0.0       0.0                          
+    0:00:00    3095.2      0.00       0.0       0.0                          
+    0:00:00    3095.2      0.00       0.0       0.0                          
+    0:00:00    3095.2      0.00       0.0       0.0                          
+    0:00:00    3095.2      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:00    3095.2      0.00       0.0       0.0                          
+    0:00:00    3095.2      0.00       0.0       0.0                          
+    0:00:00    3095.2      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:00    3095.2      0.00       0.0       0.0                          
+    0:00:00    3095.2      0.00       0.0       0.0                          
+    0:00:00    3091.3      0.00       0.0       0.0                          
+    0:00:00    3091.3      0.00       0.0       0.0                          
+    0:00:00    3091.3      0.00       0.0       0.0                          
+    0:00:00    3091.3      0.00       0.0       0.0                          
+    0:00:00    3087.7      0.00       0.0       0.0                          
+    0:00:00    3087.7      0.00       0.0       0.0                          
+    0:00:00    3087.7      0.00       0.0       0.0                          
+    0:00:00    3087.7      0.00       0.0       0.0                          
+    0:00:00    3087.7      0.00       0.0       0.0                          
+    0:00:00    3087.7      0.00       0.0       0.0                          
+    0:00:00    3087.7      0.00       0.0       0.0                          
+Loading db file '/eeei/home/user/student/Documents/CoE111_201358222/me3/lib/saed90nm_typ.db'
+
+  Optimization Complete
+  ---------------------
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : mult
+Version: I-2013.12
+Date   : Tue Sep 13 08:58:10 2016
+****************************************
+
+This design has no violated constraints.
+
+ 
+****************************************
+Report : area
+Design : mult
+Version: I-2013.12
+Date   : Tue Sep 13 08:58:10 2016
+****************************************
+
+Library(s) Used:
+
+    saed90nm_typ (File: /eeei/home/user/student/Documents/CoE111_201358222/me3/lib/saed90nm_typ.db)
+
+Number of ports:                           32
+Number of nets:                           294
+Number of cells:                          234
+Number of combinational cells:            233
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                         31
+Number of references:                      10
+
+Combinational area:               2981.375999
+Buf/Inv area:                      171.417604
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:             106.285285
+
+Total cell area:                  2981.375999
+Total area:                       3087.661284
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : mult
+Version: I-2013.12
+Date   : Tue Sep 13 08:58:10 2016
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ
+Wire Load Model Mode: enclosed
+
+  Startpoint: b_in[1] (input port clocked by vclk)
+  Endpoint: product[14]
+            (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  mult               8000                  saed90nm_typ
+  mult_DW01_add_0    8000                  saed90nm_typ
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock vclk (rise edge)                                  0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    4.50       4.50 f
+  b_in[1] (in)                                            0.00       4.50 f
+  U180/ZN (INVX0)                                         0.02       4.53 r
+  U264/Q (AND2X1)                                         0.06       4.59 r
+  U262/Q (AND2X1)                                         0.06       4.64 r
+  U261/Q (XOR2X1)                                         0.07       4.72 f
+  U89/QN (AOI22X1)                                        0.11       4.83 r
+  U117/QN (NOR2X0)                                        0.05       4.88 f
+  U237/Q (AND2X1)                                         0.07       4.95 f
+  add_5_root_add_0_root_add_38_7/U1_4/CO (FADDX1)         0.10       5.05 f
+  add_5_root_add_0_root_add_38_7/U1_5/CO (FADDX1)         0.10       5.15 f
+  add_5_root_add_0_root_add_38_7/U1_6/CO (FADDX1)         0.10       5.24 f
+  add_5_root_add_0_root_add_38_7/U1_7/CO (FADDX1)         0.10       5.34 f
+  add_5_root_add_0_root_add_38_7/U1_8/S (FADDX1)          0.11       5.45 f
+  add_3_root_add_0_root_add_38_7/U1_8/S (FADDX1)          0.12       5.58 f
+  add_1_root_add_0_root_add_38_7/U1_8/S (FADDX1)          0.12       5.70 f
+  add_0_root_add_0_root_add_38_7/B[8] (mult_DW01_add_0)
+                                                          0.00       5.70 f
+  add_0_root_add_0_root_add_38_7/U1_8/CO (FADDX1)         0.10       5.80 f
+  add_0_root_add_0_root_add_38_7/U1_9/CO (FADDX1)         0.10       5.90 f
+  add_0_root_add_0_root_add_38_7/U1_10/CO (FADDX1)        0.10       6.00 f
+  add_0_root_add_0_root_add_38_7/U1_11/CO (FADDX1)        0.10       6.10 f
+  add_0_root_add_0_root_add_38_7/U1_12/CO (FADDX1)        0.10       6.19 f
+  add_0_root_add_0_root_add_38_7/U1_13/CO (FADDX1)        0.10       6.29 f
+  add_0_root_add_0_root_add_38_7/U1_14/S (FADDX1)         0.10       6.39 f
+  add_0_root_add_0_root_add_38_7/SUM[14] (mult_DW01_add_0)
+                                                          0.00       6.39 f
+  U101/ZN (INVX0)                                         0.04       6.43 r
+  U194/Q (XOR2X1)                                         0.07       6.50 f
+  U79/Q (AO22X1)                                          0.23       6.73 f
+  product[14] (out)                                       0.00       6.73 f
+  data arrival time                                                  6.73
+
+  clock vclk (rise edge)                                 15.00      15.00
+  clock network delay (ideal)                             0.00      15.00
+  clock uncertainty                                      -1.50      13.50
+  output external delay                                  -4.50       9.00
+  data required time                                                 9.00
+  --------------------------------------------------------------------------
+  data required time                                                 9.00
+  data arrival time                                                 -6.73
+  --------------------------------------------------------------------------
+  slack (MET)                                                        2.27
+
+
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/eeei/home/user/student/Documents/CoE111_201358222/me3/mapped/mult_mapped.sdf'. (WT-3)
+Writing verilog file '/eeei/home/user/student/Documents/CoE111_201358222/me3/mapped/mult_mapped.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)

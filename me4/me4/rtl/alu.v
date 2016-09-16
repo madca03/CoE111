@@ -1,0 +1,174 @@
+`timescale 1ns/1ps
+
+module alu(opA, opB, sel, res);
+	input [7:0] opA, opB;
+	input [2:0] sel;
+	output reg [7:0] res;
+	reg [7:0] res_temp;
+	reg [7:0] opA_mag;
+	reg [7:0] opB_mag;	
+	reg temp;
+
+	always @ (*) begin
+		case (sel)
+			3'b000: begin
+				// magnitude for 2's complement
+				opA_mag = (opA[7] == 1'b1) ? (~opA + 1) : opA;
+				opB_mag = (opB[7] == 1'b1) ? (~opB + 1) : opB;
+			end
+			3'b001: begin
+				// magnitude for 2's complement
+				opA_mag = (opA[7] == 1'b1) ? (~opA + 1) : opA;
+				opB_mag = (opB[7] == 1'b1) ? (~opB + 1) : opB;
+			end
+			3'b010: begin
+				// magnitude for 1's complement
+				opA_mag = (opA[7] == 1'b1) ? (~opA) : opA;
+				opB_mag = (opB[7] == 1'b1) ? (~opB) : opB;
+			end
+			3'b011: begin
+				// magnitude for 1's complement
+				opA_mag = (opA[7] == 1'b1) ? (~opA) : opA;
+				opB_mag = (opB[7] == 1'b1) ? (~opB) : opB;
+			end
+			3'b100: begin
+				// magnitude for signed magnitude
+				opA_mag = (opA[7] == 1'b1) ? {1'b0, opA[6:0]} : opA;
+				opB_mag = (opB[7] == 1'b1) ? {1'b0, opB[6:0]} : opB;
+			end
+			3'b101: begin
+				// magnitude for signed magnitude
+				opA_mag = (opA[7] == 1'b1) ? {1'b0, opA[6:0]} : opA;
+				opB_mag = (opB[7] == 1'b1) ? {1'b0, opB[6:0]} : opB;
+			end
+		endcase
+	end
+
+	always @ (*) begin
+		case (sel)
+			// 2's complement addition
+			3'b000: begin
+				if (opA[7] ^ opB[7]) begin
+					if (opA_mag >= opB_mag) begin
+						res_temp = opA_mag - opB_mag;
+						res = (opA[7] == 1'b1) ? (~res_temp + 1) : res_temp;
+					end else begin
+						res_temp = opB_mag - opA_mag;
+						res = (opB[7] == 1'b1) ? (~res_temp + 1) : res_temp;
+					end
+
+				end
+				// if same signs, add 
+				else begin
+					res_temp = opA_mag + opB_mag;
+					res = (opA[7] == 1'b1) ? (~res_temp + 1) : res_temp;
+				end // end if
+			end // end opt-case
+			
+			// 2's complement subtraction
+			3'b001: begin
+				// if same signs, subtract
+				if (!(opA[7] ^ opB[7])) begin
+					if (opA_mag >= opB_mag) begin
+						res_temp = opA_mag - opB_mag;
+						res = (opA[7] == 1'b1) ? (~res_temp + 1) : res_temp;
+					end else begin
+						res_temp = opB_mag - opA_mag;
+						res = (opB[7] == 1'b0) ? (~res_temp + 1) : res_temp;
+					end
+				end 
+				// if different signs, add
+				else begin
+					res_temp = opA_mag + opB_mag;
+					res = (opA[7] == 1'b1) ? (~res_temp + 1) : res_temp;
+				end // end if
+			end	// end opt-case
+
+			// 1's complement addition
+			3'b010: begin
+				// if different signs, subtract
+				if (opA[7] ^ opB[7]) begin
+					if (opA_mag >= opB_mag) begin
+						res_temp = opA_mag - opB_mag;
+						res = (opA[7] == 1'b1) ? (~res_temp) : res_temp;
+					end else begin
+						res_temp = opB_mag - opA_mag;
+						res = (opB[7] == 1'b1) ? (~res_temp) : res_temp;
+					end
+				end
+				// if same signs, add
+				else begin
+					res_temp = opA_mag + opB_mag;
+					res = (opA[7] == 1'b1) ? (~res_temp) : res_temp;
+				end
+			end
+
+			// 1's complement subtraction
+			3'b011: begin
+				// if same signs, subtract
+				if (!(opA[7] ^ opB[7])) begin
+					if (opA_mag >= opB_mag) begin
+						res_temp = opA_mag - opB_mag;
+						res = (opA[7] == 1'b1) ? (~res_temp) : res_temp;
+					end else begin
+						res_temp = opB_mag - opA_mag;
+						res = (opB[7] == 1'b0) ? (~res_temp) : res_temp;
+					end
+				end
+				// if different signs, add
+				else begin
+					res_temp = opA_mag + opB_mag;
+					res = (opA[7] == 1'b1) ? (~res_temp) : res_temp;
+				end
+			end
+
+			// sign-magnitude addition
+			3'b100: begin
+				// if different signs, subtract
+				if (opA[7] ^ opB[7]) begin
+					if (opA_mag >= opB_mag) begin
+						res_temp = opA_mag - opB_mag;
+						res = (opA[7] == 1'b1) ? {1'b1, res_temp[6:0]} : res_temp;
+					end else begin
+						res_temp = opB_mag - opA_mag;
+						res = (opB[7] == 1'b1) ? {1'b1, res_temp[6:0]} : res_temp;
+					end
+				end
+				// if same signs, add
+				else begin
+					res_temp = opA_mag + opB_mag;
+					res = (opA[7] == 1'b1) ? {1'b1, res_temp[6:0]} : res_temp;
+				end
+			end
+
+			// sign-magnitude subtraction
+			3'b101: begin
+				// if same signs, subtract
+				if (!(opA[7] ^ opB[7])) begin
+					if (opA_mag >= opB_mag) begin
+						res_temp = opA_mag - opB_mag;
+						res = (opA[7] == 1'b1) ? {1'b1, res_temp[6:0]} : res_temp;
+					end else begin
+						res_temp = opB_mag - opA_mag;
+						// because of (-) sign in front of opB
+						res = (opB[7] == 1'b0) ? {1'b1, res_temp[6:0]} : res_temp;
+					end
+				end
+				// if different signs, add
+				else begin
+					res_temp = opA_mag + opB_mag;
+					res = (opA[7] == 1'b1) ? {1'b1, res_temp[6:0]} : res_temp;
+				end
+			end
+
+			3'b110: begin
+				res = opA & opB;
+			end
+
+			3'b111: begin
+				res = opA | opB;
+			end
+		endcase
+		
+	end
+endmodule

@@ -1,0 +1,13 @@
+The file '/eeei/home/user/student/Documents/CoE 111/me1/lab_01/tb_updown.vpd' was opened successfully.
+---------------------------------------------
+
+The tool has just exited abnormally:
+
+
+Release = 'H-2013.06-SP1_Full64'  Architecture = 'amd64'  Program = 'DVE'
+
+'33128460 33153936 33156005 253568965306'
+
+---------------------------------------------
+cat: /eeei/home/user/student/Documents/CoE: No such file or directory
+cat: 111/me1/lab_01/DVEfiles/dve_crash_dve_context.log: No such file or directory

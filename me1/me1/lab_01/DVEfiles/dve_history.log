@@ -1,0 +1,71 @@
+# Preference setting overrides
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Layout -key child_console_size_x -value 1595
+gui_set_state_value -category Layout -key child_console_size_y -value 177
+gui_set_state_value -category Layout -key child_data_size_x -value 172
+gui_set_state_value -category Layout -key child_data_size_y -value 567
+gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
+gui_set_state_value -category Layout -key child_hier_colpd -value 0
+gui_set_state_value -category Layout -key child_hier_size_x -value 172
+gui_set_state_value -category Layout -key child_hier_size_y -value 567
+gui_set_state_value -category Layout -key child_source_docknewline -value false
+gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_source_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_source_size_x -value 1254
+gui_set_state_value -category Layout -key child_source_size_y -value 562
+gui_set_state_value -category Layout -key main_pos_x -value 2
+gui_set_state_value -category Layout -key main_pos_y -value 51
+gui_set_state_value -category Layout -key main_size_x -value 1597
+gui_set_state_value -category Layout -key main_size_y -value 870
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_state_default_create -off
+
+# Begin command logging
+gui_open_db -file {/eeei/home/user/student/Documents/CoE 111/me1/lab_01/tb_updown.vpd} -design V1
+gui_list_select -id Data.1 -selected  { tb_updown.clk   }
+gui_list_select -id Data.1 -selected  { tb_updown.clk  tb_updown.nrst   }
+gui_list_select -id Data.1 -selected  { tb_updown.clk  tb_updown.nrst  tb_updown.dir   }
+gui_list_select -id Data.1 -selected  { tb_updown.clk  tb_updown.nrst  tb_updown.dir  {tb_updown.count[3:0]}   }
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Data.1 { tb_updown.clk tb_updown.nrst tb_updown.dir {tb_updown.count[3:0]} } -insertionbar
+gui_zoom -window Wave.1 -full
+gui_close_window -window TopLevel.2
+gui_list_select -id Data.1 -selected  {  }
+gui_list_select_all -id Data.1
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Data.1 { tb_updown.clk tb_updown.nrst tb_updown.dir {tb_updown.count[3:0]} } -insertionbar
+gui_zoom -window Wave.1 -full
+gui_close_window -window TopLevel.2
+gui_list_select -id Data.1 -selected  {  }
+gui_list_select -id Data.1 -selected  { tb_updown.clk   }
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Data.1 { tb_updown.clk } -insertionbar
+gui_list_select -id Data.1 -selected  { tb_updown.nrst   }
+gui_list_add -id Wave.1 -from Data.1 { tb_updown.nrst } -insertionbar
+gui_zoom -window Wave.1 -full
+gui_list_select -id Data.1 -selected  { tb_updown.dir   }
+gui_list_add -id Wave.1 -from Data.1 { tb_updown.dir } -insertionbar
+gui_list_select -id Data.1 -selected  { {tb_updown.count[3:0]}   }
+gui_list_add -id Wave.1 -from Data.1 { {tb_updown.count[3:0]} } -insertionbar
+gui_list_select -id Data.1 -selected  { tb_updown.clk   }
+gui_wv_zoom_timerange -id  Wave.1 23917 75078
+gui_zoom -window Wave.1 -full
+gui_marker_select -id  Wave.1 { C1 }
+gui_marker_move -id  Wave.1 C1 78406
+gui_marker_move -id  Wave.1 C1 48458
+gui_marker_move -id  Wave.1 C1 88180
+gui_marker_move -id  Wave.1 C1 44298
+gui_marker_move -id  Wave.1 C1 90260
+gui_wv_zoom_timerange -id  Wave.1 0 230849
+gui_zoom -window Wave.1 -full
+gui_zoom -window Wave.1 -factor 2
+gui_zoom -window Wave.1 -factor 0.5
+gui_zoom -window Wave.1 -full
+gui_marker_move -id  Wave.1 C1 51027
+gui_close_window -window TopLevel.2

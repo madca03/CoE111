@@ -1,0 +1,442 @@
+Loading db file '/eeei/home/user/student/Documents/CoE111_201358222/me4/lib/saed90nm_typ.db'
+Loading db file '/eeei/tools/synopsys/syn/I-2013.12/libraries/syn/gtech.db'
+Loading db file '/eeei/tools/synopsys/syn/I-2013.12/libraries/syn/standard.sldb'
+  Loading link library 'saed90nm_typ'
+  Loading link library 'gtech'
+Loading verilog file '/eeei/home/user/student/Documents/CoE111_201358222/me4/rtl/alu.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /eeei/home/user/student/Documents/CoE111_201358222/me4/rtl/alu.v
+
+Statistics for case statements in always block at line 12 in file
+	'/eeei/home/user/student/Documents/CoE111_201358222/me4/rtl/alu.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            13            |     no/auto      |
+===============================================
+
+Statistics for case statements in always block at line 47 in file
+	'/eeei/home/user/student/Documents/CoE111_201358222/me4/rtl/alu.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            48            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine alu line 12 in file
+		'/eeei/home/user/student/Documents/CoE111_201358222/me4/rtl/alu.v'.
+===========================================================================
+|    Register Name    | Type  | Width | Bus | MB | AR | AS | SR | SS | ST |
+===========================================================================
+|     opB_mag_reg     | Latch |   8   |  Y  | N  | N  | N  | -  | -  | -  |
+|     opA_mag_reg     | Latch |   8   |  Y  | N  | N  | N  | -  | -  | -  |
+===========================================================================
+Presto compilation completed successfully.
+Current design is now '/eeei/home/user/student/Documents/CoE111_201358222/me4/rtl/alu.db:alu'
+Loaded 1 design.
+Current design is 'alu'.
+Current design is 'alu'.
+
+  Linking design 'alu'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  alu                         /eeei/home/user/student/Documents/CoE111_201358222/me4/rtl/alu.db
+  saed90nm_typ (library)      /eeei/home/user/student/Documents/CoE111_201358222/me4/lib/saed90nm_typ.db
+
+ 
+****************************************
+check_design summary:
+Version:     I-2013.12
+Date:        Tue Sep 13 11:11:15 2016
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Cells                                                              22
+    Cells do not drive (LINT-1)                                    22
+--------------------------------------------------------------------------------
+
+Warning: In design 'alu', cell 'C1089' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'C1090' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'C1094' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'C1095' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'C1111' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'C1121' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'C1131' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'C1146' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'C1156' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'C1166' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'C1179' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'C1188' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'C1197' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'C1210' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'C1219' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'C1228' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'C1241' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'C1242' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'C1243' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'C1250' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'C1251' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'C1254' does not drive any nets. (LINT-1)
+Warning: Creating virtual clock named 'vclk' with no sources. (UID-348)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Warning: Design rule attributes from the driving cell will be
+	set on the port. (UID-401)
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_sub_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*SUB_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_add_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_8_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_inc_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*ADD_UNS_OP_8_1_8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GEQ_UNS_OP_8_8_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GEQ_UNS_OP_8_8_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GEQ_UNS_OP_8_8_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GEQ_UNS_OP_8_8_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GEQ_UNS_OP_8_8_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for 'DW01_cmp2_width8' from '(none)' to 'ForQA'. (OPT-170)
+Information: Changed wire load model for '*GEQ_UNS_OP_8_8_1' from '(none)' to 'ForQA'. (OPT-170)
+Information: Updating design information... (UID-85)
+
+Information: Checking generated_clocks...
+
+Information: Checking loops...
+
+Information: Checking no_input_delay...
+
+Information: Checking unconstrained_endpoints...
+
+Warning: The following end-points are not constrained for maximum delay.
+
+End point
+---------------
+opA_mag_reg[0]/data_in
+opA_mag_reg[1]/data_in
+opA_mag_reg[2]/data_in
+opA_mag_reg[3]/data_in
+opA_mag_reg[4]/data_in
+opA_mag_reg[5]/data_in
+opA_mag_reg[6]/data_in
+opA_mag_reg[7]/data_in
+opB_mag_reg[0]/data_in
+opB_mag_reg[1]/data_in
+opB_mag_reg[2]/data_in
+opB_mag_reg[3]/data_in
+opB_mag_reg[4]/data_in
+opB_mag_reg[5]/data_in
+opB_mag_reg[6]/data_in
+opB_mag_reg[7]/data_in
+
+Information: Checking pulse_clock_cell_type...
+
+Information: Checking no_driving_cell...
+
+Information: Checking partial_input_delay...
+Warning: there are 19 input ports that only have partial input delay specified. (TIM-212)
+--------------------
+opA[7]
+opA[6]
+opA[5]
+opA[4]
+opA[3]
+opA[2]
+opA[1]
+opA[0]
+opB[7]
+opB[6]
+opB[5]
+opB[4]
+opB[3]
+opB[2]
+opB[1]
+opB[0]
+sel[2]
+sel[1]
+sel[0]
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | I-2013.12-DWBB_201312.0 |     *     |
+| Licensed DW Building Blocks        |                         |           |
+============================================================================
+
+
+Information: There are 22 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'alu'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'alu_DW01_inc_0'
+  Processing 'alu_DW01_inc_1'
+  Processing 'alu_DW01_inc_2'
+  Processing 'alu_DW01_inc_3'
+  Processing 'alu_DW01_inc_4'
+  Processing 'alu_DW01_inc_5'
+  Processing 'alu_DW01_add_0'
+  Processing 'alu_DW01_sub_0'
+  Processing 'alu_DW01_sub_1'
+  Processing 'alu_DW01_cmp2_0'
+  Processing 'alu_DW01_inc_6'
+  Processing 'alu_DW01_inc_7'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    4275.5      0.00       0.0       0.0                          
+    0:00:01    4275.5      0.00       0.0       0.0                          
+    0:00:01    4275.5      0.00       0.0       0.0                          
+    0:00:01    4275.5      0.00       0.0       0.0                          
+    0:00:01    4275.5      0.00       0.0       0.0                          
+    0:00:01    4065.3      0.00       0.0       0.0                          
+    0:00:01    4065.3      0.00       0.0       0.0                          
+    0:00:01    4065.3      0.00       0.0       0.0                          
+    0:00:01    4065.3      0.00       0.0       0.0                          
+    0:00:01    4065.3      0.00       0.0       0.0                          
+    0:00:01    4065.3      0.00       0.0       0.0                          
+    0:00:01    4065.3      0.00       0.0       0.0                          
+    0:00:01    4065.3      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    4065.3      0.00       0.0       0.0                          
+    0:00:01    4065.3      0.00       0.0       0.0                          
+    0:00:01    4065.3      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01    4065.3      0.00       0.0       0.0                          
+    0:00:01    4065.3      0.00       0.0       0.0                          
+    0:00:01    4025.3      0.00       0.0       0.0                          
+    0:00:01    4008.1      0.00       0.0       0.0                          
+    0:00:01    4008.1      0.00       0.0       0.0                          
+    0:00:01    4008.1      0.00       0.0       0.0                          
+    0:00:01    4008.1      0.00       0.0       0.0                          
+    0:00:01    4008.1      0.00       0.0       0.0                          
+    0:00:01    4008.1      0.00       0.0       0.0                          
+    0:00:01    4008.1      0.00       0.0       0.0                          
+    0:00:01    4008.1      0.00       0.0       0.0                          
+    0:00:01    4008.1      0.00       0.0       0.0                          
+    0:00:01    4008.1      0.00       0.0       0.0                          
+Loading db file '/eeei/home/user/student/Documents/CoE111_201358222/me4/lib/saed90nm_typ.db'
+
+  Optimization Complete
+  ---------------------
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : alu
+Version: I-2013.12
+Date   : Tue Sep 13 11:11:18 2016
+****************************************
+
+This design has no violated constraints.
+
+ 
+****************************************
+Report : area
+Design : alu
+Version: I-2013.12
+Date   : Tue Sep 13 11:11:18 2016
+****************************************
+
+Library(s) Used:
+
+    saed90nm_typ (File: /eeei/home/user/student/Documents/CoE111_201358222/me4/lib/saed90nm_typ.db)
+
+Number of ports:                           27
+Number of nets:                           328
+Number of cells:                          221
+Number of combinational cells:            194
+Number of sequential cells:                16
+Number of macros/black boxes:               0
+Number of buf/inv:                         55
+Number of references:                      33
+
+Combinational area:               3497.472010
+Buf/Inv area:                      447.897612
+Noncombinational area:             353.894409
+Macro/Black Box area:                0.000000
+Net Interconnect area:             156.687371
+
+Total cell area:                  3851.366419
+Total area:                       4008.053790
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : alu
+Version: I-2013.12
+Date   : Tue Sep 13 11:11:18 2016
+****************************************
+
+Operating Conditions: TYPICAL   Library: saed90nm_typ
+Wire Load Model Mode: enclosed
+
+  Startpoint: opA[7] (input port clocked by vclk)
+  Endpoint: res[0] (output port clocked by vclk)
+  Path Group: vclk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  alu                8000                  saed90nm_typ
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock vclk (rise edge)                   0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     4.50       4.50 f
+  opA[7] (in)                              0.00       4.50 f
+  U267/ZN (INVX0)                          0.07       4.57 r
+  U251/Q (XNOR2X1)                         0.15       4.73 r
+  U210/ZN (INVX0)                          0.08       4.81 f
+  U151/Q (AO22X1)                          0.09       4.90 f
+  U149/Q (AO221X1)                         0.06       4.96 f
+  U221/QN (NAND2X1)                        0.02       4.98 r
+  U148/Q (AO21X1)                          0.08       5.06 r
+  U195/ZN (INVX0)                          0.05       5.12 f
+  U147/QN (AOI222X1)                       0.09       5.21 r
+  U141/QN (NAND4X0)                        0.37       5.57 f
+  res[0] (out)                             0.00       5.58 f
+  data arrival time                                   5.58
+
+  clock vclk (rise edge)                  15.00      15.00
+  clock network delay (ideal)              0.00      15.00
+  clock uncertainty                       -1.50      13.50
+  output external delay                   -4.50       9.00
+  data required time                                  9.00
+  -----------------------------------------------------------
+  data required time                                  9.00
+  data arrival time                                  -5.58
+  -----------------------------------------------------------
+  slack (MET)                                         3.42
+
+
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/eeei/home/user/student/Documents/CoE111_201358222/me4/mapped/alu_mapped.sdf'. (WT-3)
+Writing verilog file '/eeei/home/user/student/Documents/CoE111_201358222/me4/mapped/alu_mapped.v'.
+
+Thank you...

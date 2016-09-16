@@ -1,0 +1,1119 @@
+Command: vcs ../mapped/alu_mapped.v ../lib/saed90nm.v tb_alu.v -full64 -debug_pp \
++neg_tchk -R -l vcs.log
+                         Chronologic VCS (TM)
+       Version H-2013.06-SP1_Full64 -- Tue Sep 13 11:13:43 2016
+               Copyright (c) 1991-2013 by Synopsys Inc.
+                         ALL RIGHTS RESERVED
+
+This program is proprietary and confidential information of Synopsys Inc.
+and may be used and disclosed only as authorized in a license agreement
+controlling such use and disclosure.
+
+Parsing design file '../mapped/alu_mapped.v'
+Parsing design file '../lib/saed90nm.v'
+Parsing design file 'tb_alu.v'
+Top Level Modules:
+       AND2X2
+       AND2X4
+       AND3X2
+       AND3X4
+       AND4X1
+       AND4X2
+       AND4X4
+       ANTENNA
+       AO21X2
+       AO221X2
+       AO222X2
+       AO22X2
+       AOBUFX1
+       AOBUFX2
+       AOBUFX4
+       AODFFARX1
+       AODFFARX2
+       AODFFNARX1
+       AODFFNARX2
+       AOI21X1
+       AOI21X2
+       AOI221X2
+       AOI222X2
+       AOI22X1
+       AOI22X2
+       AOINVX1
+       AOINVX2
+       AOINVX4
+       BSLEX1
+       BSLEX2
+       BSLEX4
+       BUSKP
+       CGLNPRX2
+       CGLNPRX8
+       CGLNPSX16
+       CGLNPSX2
+       CGLNPSX4
+       CGLNPSX8
+       CGLPPRX2
+       CGLPPRX8
+       CGLPPSX16
+       CGLPPSX2
+       CGLPPSX4
+       CGLPPSX8
+       CLOAD1
+       DCAP
+       DEC24X1
+       DEC24X2
+       DELLN1X2
+       DELLN2X2
+       DELLN3X2
+       DFFARX1
+       DFFARX2
+       DFFASRX1
+       DFFASRX2
+       DFFASX1
+       DFFASX2
+       DFFNARX1
+       DFFNARX2
+       DFFNASRNX1
+       DFFNASRNX2
+       DFFNASRQX1
+       DFFNASRQX2
+       DFFNASRX1
+       DFFNASRX2
+       DFFNASX1
+       DFFNASX2
+       DFFNX1
+       DFFNX2
+       DFFSSRX1
+       DFFSSRX2
+       DFFX1
+       DFFX2
+       DHFILLHLH2
+       DHFILLHLHLS11
+       DHFILLLHL2
+       FADDX2
+       HADDX2
+       HEAD2X16
+       HEAD2X2
+       HEAD2X32
+       HEAD2X4
+       HEAD2X8
+       HEADX16
+       HEADX2
+       HEADX32
+       HEADX4
+       HEADX8
+       IBUFFX16
+       IBUFFX2
+       IBUFFX32
+       IBUFFX4
+       IBUFFX8
+       INVX16
+       INVX1
+       INVX2
+       INVX32
+       INVX4
+       INVX8
+       ISOLANDX1
+       ISOLANDX2
+       ISOLANDX4
+       ISOLANDX8
+       ISOLORX1
+       ISOLORX2
+       ISOLORX4
+       ISOLORX8
+       LARX1
+       LARX2
+       LASRNX1
+       LASRNX2
+       LASRQX1
+       LASRQX2
+       LASRX1
+       LASRX2
+       LASX1
+       LASX2
+       LATCHX2
+       LNANDX1
+       LNANDX2
+       LSDNENX1
+       LSDNENX2
+       LSDNENX4
+       LSDNENX8
+       LSDNENCLX1
+       LSDNENCLX2
+       LSDNENCLX4
+       LSDNENCLX8
+       LSDNX1
+       LSDNX2
+       LSDNX4
+       LSDNX8
+       LSUPENX1
+       LSUPENX2
+       LSUPENX4
+       LSUPENX8
+       LSUPENCLX1
+       LSUPENCLX2
+       LSUPENCLX4
+       LSUPENCLX8
+       LSUPX1
+       LSUPX2
+       LSUPX4
+       LSUPX8
+       MUX21X1
+       MUX21X2
+       MUX41X1
+       MUX41X2
+       NAND2X0
+       NAND2X2
+       NAND2X4
+       NAND3X1
+       NAND3X2
+       NAND3X4
+       NAND4X1
+       NBUFFX16
+       NBUFFX2
+       NBUFFX32
+       NBUFFX4
+       NBUFFX8
+       NMT1
+       NMT2
+       NMT3
+       NOR2X1
+       NOR2X2
+       NOR2X4
+       NOR3X1
+       NOR3X2
+       NOR3X4
+       NOR4X1
+       OA21X2
+       OA221X2
+       OA222X1
+       OA222X2
+       OA22X2
+       OAI21X1
+       OAI21X2
+       OAI221X1
+       OAI221X2
+       OAI222X1
+       OAI222X2
+       OAI22X2
+       OR2X2
+       OR2X4
+       OR3X1
+       OR3X2
+       OR3X4
+       OR4X1
+       OR4X2
+       OR4X4
+       PGX1
+       PGX2
+       PGX4
+       PMT1
+       PMT2
+       PMT3
+       SDFFARX1
+       SDFFARX2
+       SDFFASRSX1
+       SDFFASRSX2
+       SDFFASRX1
+       SDFFASRX2
+       SDFFASX1
+       SDFFASX2
+       SDFFNARX1
+       SDFFNARX2
+       SDFFNASRX1
+       SDFFNASRX2
+       SDFFNASX1
+       SDFFNASX2
+       SDFFNX1
+       SDFFNX2
+       SDFFSSRX1
+       SDFFSSRX2
+       SDFFX1
+       SDFFX2
+       SHFILL2
+       SHFILL3
+       SHFILL1
+       SHFILL64
+       SHFILL128
+       TIEH
+       TIEL
+       TNBUFFX16
+       TNBUFFX1
+       TNBUFFX2
+       TNBUFFX32
+       TNBUFFX4
+       TNBUFFX8
+       XNOR2X2
+       XNOR3X1
+       XNOR3X2
+       XOR2X2
+       XOR3X2
+       RDFFARX1
+       RDFFARX2
+       RDFFNARX1
+       RDFFNARX2
+       RSDFFARX1
+       RSDFFARX2
+       RSDFFNARX1
+       RSDFFNARX2
+       RDFFNX1
+       RDFFNX2
+       RDFFX1
+       RDFFX2
+       RSDFFNX1
+       RSDFFNX2
+       RSDFFX1
+       RSDFFX2
+       RDFFNSRASX1
+       RDFFNSRASX2
+       RDFFSRARX1
+       RDFFSRARX2
+       RDFFSRASRX1
+       RDFFSRASRX2
+       RDFFSRASX1
+       RDFFSRASX2
+       RSDFFNSRARX1
+       RSDFFNSRARX2
+       RSDFFNSRASRX1
+       RSDFFNSRASRX2
+       RSDFFNSRASRNX1
+       RSDFFNSRASRNX2
+       RSDFFNSRASRQX1
+       RSDFFNSRASRQX2
+       RSDFFSRARX1
+       RSDFFSRARX2
+       RSDFFSRASRX1
+       RSDFFSRASRX2
+       RDFFNSRARX1
+       RDFFNSRARX2
+       RDFFNSRASRQX1
+       RDFFNSRASRQX2
+       RDFFNSRASRNX1
+       RDFFNSRASRNX2
+       RDFFNSRASRX1
+       RDFFNSRASRX2
+       RDFFNSRX1
+       RDFFNSRX2
+       RDFFSRSSRX1
+       RDFFSRSSRX2
+       RDFFSRX1
+       RDFFSRX2
+       RSDFFNSRASX1
+       RSDFFNSRASX2
+       RSDFFNSRX1
+       RSDFFNSRX2
+       RSDFFSRASX1
+       RSDFFSRASX2
+       RSDFFSRSSRX1
+       RSDFFSRSSRX2
+       RSDFFSRX1
+       RSDFFSRX2
+       tb_alu
+TimeScale is 1 ps / 1 ps
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/alu_mapped.v", 113: FADDX1 U1_7( .A (A[7]),  .B (B[7]),  .CI 
+  (carry[7]),  .S (SUM[7]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/alu_mapped.v", 270: LATCHX1 \opB_mag_reg[1] ( .CLK (N137),  .D 
+  (N147),  .Q (opB_mag[1]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/alu_mapped.v", 271: LATCHX1 \opB_mag_reg[0] ( .CLK (N137),  .D 
+  (N146),  .Q (opB_mag[0]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/alu_mapped.v", 272: LATCHX1 \opA_mag_reg[7] ( .CLK (N137),  .D 
+  (N145),  .Q (opA_mag[7]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/alu_mapped.v", 273: LATCHX1 \opA_mag_reg[6] ( .CLK (N137),  .D 
+  (N144),  .Q (opA_mag[6]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/alu_mapped.v", 274: LATCHX1 \opA_mag_reg[5] ( .CLK (N137),  .D 
+  (N143),  .Q (opA_mag[5]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/alu_mapped.v", 275: LATCHX1 \opA_mag_reg[4] ( .CLK (N137),  .D 
+  (N142),  .Q (opA_mag[4]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/alu_mapped.v", 276: LATCHX1 \opA_mag_reg[3] ( .CLK (N137),  .D 
+  (N141),  .Q (opA_mag[3]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/alu_mapped.v", 281: LATCHX1 \opA_mag_reg[0] ( .CLK (N137),  .D 
+  (N138),  .Q (opA_mag[0]));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/alu_mapped.v", 451: alu_DW01_add_0 r167( .A (opA_mag),  .B 
+  (opB_mag),  .CI (1'b0),  .SUM ({N249, N248, N247, N246, N245, N244, N243, 
+  N242}));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/alu_mapped.v", 453: alu_DW01_sub_0 r165( .A (opB_mag),  .B 
+  (opA_mag),  .CI (1'b0),  .DIFF ({N208, N207, N206, N205, N204, N203, N202, 
+  N201}));
+  
+
+
+Warning-[TFIPC] Too few instance port connections
+  The following instance has fewer port connections than the module definition
+  "../mapped/alu_mapped.v", 455: alu_DW01_sub_1 r163( .A (opA_mag),  .B 
+  (opB_mag),  .CI (1'b0),  .DIFF ({N175, N174, N173, N172, N171, N170, N169, 
+  N168}));
+  
+
+
+   ***   $sdf_annotate() version 1.2R
+   ***    SDF file: "../mapped/alu_mapped.sdf"
+   ***    Annotation scope: tb_alu.A1
+   ***    No MTM selection argument specified
+   ***    No SCALE FACTORS argument specified
+   ***    No SCALE TYPE argument specified
+   ***    MTM selection defaulted to "TOOL_CONTROL":
+               (+typdelays compiled, TYPICAL delays selected)
+   ***    SCALE FACTORS defaulted to "1.0:1.0:1.0":
+   ***    SCALE TYPE defaulted to: "FROM_MTM"
+   ***    Turnoff delay: "FROM_FILE"
+   ***    Approximation (mipd) policy: "MAXIMUM"
+
+   ***    SDF annotation begin: Tue Sep 13 11:13:44 2016
+
+
+SDF Info: +pulse_r/100, +pulse_e/100 in effect
+
+          Total errors: 0
+          Total warnings: 0
+   ***    SDF annotation completed: Tue Sep 13 11:13:44 2016
+
+
+Starting vcs inline pass...
+333 modules and 26 UDPs read.
+recompiling module alu_DW01_inc_0 because:
+	Generated file (UKaC_1) not found, or not incremental.
+recompiling module alu_DW01_inc_1 because:
+	Generated file (vx3e_1) not found, or not incremental.
+recompiling module alu_DW01_inc_2 because:
+	Generated file (ypM7_1) not found, or not incremental.
+recompiling module alu_DW01_inc_3 because:
+	Generated file (rO4R_1) not found, or not incremental.
+recompiling module alu_DW01_inc_4 because:
+	Generated file (Aiji_1) not found, or not incremental.
+recompiling module alu_DW01_inc_5 because:
+	Generated file (lqbU_1) not found, or not incremental.
+recompiling module alu_DW01_add_0 because:
+	Generated file (a0yG_1) not found, or not incremental.
+recompiling module alu_DW01_sub_0 because:
+	Generated file (6Y6O_1) not found, or not incremental.
+recompiling module alu_DW01_sub_1 because:
+	Generated file (LWo4_1) not found, or not incremental.
+recompiling module alu_DW01_inc_6 because:
+	Generated file (oK3w_1) not found, or not incremental.
+recompiling module alu_DW01_inc_7 because:
+	Generated file (XLng_1) not found, or not incremental.
+recompiling module alu because:
+	Generated file (Gydy_1) not found, or not incremental.
+recompiling module AND2X1 because:
+	Generated file (xqvb_1) not found, or not incremental.
+recompiling module AND2X2 because:
+	Generated file (IDPJ_1) not found, or not incremental.
+recompiling module AND2X4 because:
+	Generated file (sTVs_1) not found, or not incremental.
+recompiling module AND3X1 because:
+	Generated file (aiF1_1) not found, or not incremental.
+recompiling module AND3X2 because:
+	Generated file (FCwf_1) not found, or not incremental.
+recompiling module AND3X4 because:
+	Generated file (7PeQ_1) not found, or not incremental.
+recompiling module AND4X1 because:
+	Generated file (vk2A_1) not found, or not incremental.
+recompiling module AND4X2 because:
+	Generated file (a8BC_1) not found, or not incremental.
+recompiling module AND4X4 because:
+	Generated file (cOzd_1) not found, or not incremental.
+recompiling module ANTENNA because:
+	Generated file (6l7b_1) not found, or not incremental.
+recompiling module AO21X1 because:
+	Generated file (wNcR_1) not found, or not incremental.
+recompiling module AO21X2 because:
+	Generated file (5tIb_1) not found, or not incremental.
+recompiling module AO221X1 because:
+	Generated file (bIGE_1) not found, or not incremental.
+recompiling module AO221X2 because:
+	Generated file (QWSR_1) not found, or not incremental.
+recompiling module AO222X1 because:
+	Generated file (kL1w_1) not found, or not incremental.
+recompiling module AO222X2 because:
+	Generated file (P91j_1) not found, or not incremental.
+recompiling module AO22X1 because:
+	Generated file (re3c_1) not found, or not incremental.
+recompiling module AO22X2 because:
+	Generated file (uof5_1) not found, or not incremental.
+recompiling module AOBUFX1 because:
+	Generated file (ELr7_1) not found, or not incremental.
+recompiling module AOBUFX2 because:
+	Generated file (HaTr_1) not found, or not incremental.
+recompiling module AOBUFX4 because:
+	Generated file (9VO4_1) not found, or not incremental.
+recompiling module AODFFARX1 because:
+	Generated file (wCiA_1) not found, or not incremental.
+recompiling module AODFFARX2 because:
+	Generated file (bzX3_1) not found, or not incremental.
+recompiling module AODFFNARX1 because:
+	Generated file (SEWx_1) not found, or not incremental.
+recompiling module AODFFNARX2 because:
+	Generated file (LKrz_1) not found, or not incremental.
+recompiling module AOI21X1 because:
+	Generated file (htJK_1) not found, or not incremental.
+recompiling module AOI21X2 because:
+	Generated file (ov8e_1) not found, or not incremental.
+recompiling module AOI221X1 because:
+	Generated file (AB3u_1) not found, or not incremental.
+recompiling module AOI221X2 because:
+	Generated file (pmSC_1) not found, or not incremental.
+recompiling module AOI222X1 because:
+	Generated file (Vn82_1) not found, or not incremental.
+recompiling module AOI222X2 because:
+	Generated file (KaMK_1) not found, or not incremental.
+recompiling module AOI22X1 because:
+	Generated file (IIqC_1) not found, or not incremental.
+recompiling module AOI22X2 because:
+	Generated file (vaoF_1) not found, or not incremental.
+recompiling module AOINVX1 because:
+	Generated file (mkc2_1) not found, or not incremental.
+recompiling module AOINVX2 because:
+	Generated file (tD1P_1) not found, or not incremental.
+recompiling module AOINVX4 because:
+	Generated file (lIWo_1) not found, or not incremental.
+recompiling module BSLEX1 because:
+	Generated file (mWW4_1) not found, or not incremental.
+recompiling module BSLEX2 because:
+	Generated file (ttJb_1) not found, or not incremental.
+50 of 333 modules done
+recompiling module BSLEX4 because:
+	Generated file (NtY7_1) not found, or not incremental.
+recompiling module BUSKP because:
+	Generated file (NNCR_1) not found, or not incremental.
+recompiling module CGLNPRX2 because:
+	Generated file (xhCK_1) not found, or not incremental.
+recompiling module CGLNPRX8 because:
+	Generated file (B9Yc_1) not found, or not incremental.
+recompiling module CGLNPSX16 because:
+	Generated file (TX0Q_1) not found, or not incremental.
+recompiling module CGLNPSX2 because:
+	Generated file (YlIu_1) not found, or not incremental.
+recompiling module CGLNPSX4 because:
+	Generated file (IyeF_1) not found, or not incremental.
+recompiling module CGLNPSX8 because:
+	Generated file (y6mS_1) not found, or not incremental.
+recompiling module CGLPPRX2 because:
+	Generated file (GeSc_1) not found, or not incremental.
+recompiling module CGLPPRX8 because:
+	Generated file (E25s_1) not found, or not incremental.
+recompiling module CGLPPSX16 because:
+	Generated file (mZZ9_1) not found, or not incremental.
+recompiling module CGLPPSX2 because:
+	Generated file (pHZE_1) not found, or not incremental.
+recompiling module CGLPPSX4 because:
+	Generated file (Bv54_1) not found, or not incremental.
+recompiling module CGLPPSX8 because:
+	Generated file (bbFA_1) not found, or not incremental.
+recompiling module CLOAD1 because:
+	Generated file (iYXz_1) not found, or not incremental.
+recompiling module DCAP because:
+	Generated file (4Q4P_1) not found, or not incremental.
+recompiling module DEC24X1 because:
+	Generated file (ekux_1) not found, or not incremental.
+recompiling module DEC24X2 because:
+	Generated file (JEfL_1) not found, or not incremental.
+recompiling module DELLN1X2 because:
+	Generated file (uoNS_1) not found, or not incremental.
+recompiling module DELLN2X2 because:
+	Generated file (noNG_1) not found, or not incremental.
+recompiling module DELLN3X2 because:
+	Generated file (S6fm_1) not found, or not incremental.
+recompiling module DFFARX1 because:
+	Generated file (NGQr_1) not found, or not incremental.
+recompiling module DFFARX2 because:
+	Generated file (wtvW_1) not found, or not incremental.
+recompiling module DFFASRX1 because:
+	Generated file (8nqX_1) not found, or not incremental.
+recompiling module DFFASRX2 because:
+	Generated file (1tH5_1) not found, or not incremental.
+recompiling module DFFASX1 because:
+	Generated file (wCC8_1) not found, or not incremental.
+recompiling module DFFASX2 because:
+	Generated file (flNl_1) not found, or not incremental.
+recompiling module DFFNARX1 because:
+	Generated file (4d0l_1) not found, or not incremental.
+recompiling module DFFNARX2 because:
+	Generated file (VA9J_1) not found, or not incremental.
+recompiling module DFFNASRNX1 because:
+	Generated file (lMbq_1) not found, or not incremental.
+recompiling module DFFNASRNX2 because:
+	Generated file (eZhi_1) not found, or not incremental.
+recompiling module DFFNASRQX1 because:
+	Generated file (AZqF_1) not found, or not incremental.
+recompiling module DFFNASRQX2 because:
+	Generated file (ZReT_1) not found, or not incremental.
+recompiling module DFFNASRX1 because:
+	Generated file (n62z_1) not found, or not incremental.
+recompiling module DFFNASRX2 because:
+	Generated file (2il6_1) not found, or not incremental.
+recompiling module DFFNASX1 because:
+	Generated file (nVMS_1) not found, or not incremental.
+recompiling module DFFNASX2 because:
+	Generated file (IRgy_1) not found, or not incremental.
+recompiling module DFFNX1 because:
+	Generated file (SB3X_1) not found, or not incremental.
+recompiling module DFFNX2 because:
+	Generated file (HjSc_1) not found, or not incremental.
+recompiling module DFFSSRX1 because:
+	Generated file (iTej_1) not found, or not incremental.
+recompiling module DFFSSRX2 because:
+	Generated file (liug_1) not found, or not incremental.
+recompiling module DFFX1 because:
+	Generated file (4FOO_1) not found, or not incremental.
+recompiling module DFFX2 because:
+	Generated file (v0KB_1) not found, or not incremental.
+recompiling module DHFILLHLH2 because:
+	Generated file (mByL_1) not found, or not incremental.
+recompiling module DHFILLHLHLS11 because:
+	Generated file (GXlg_1) not found, or not incremental.
+recompiling module DHFILLLHL2 because:
+	Generated file (ccVb_1) not found, or not incremental.
+recompiling module FADDX1 because:
+	Generated file (DIBO_1) not found, or not incremental.
+recompiling module FADDX2 because:
+	Generated file (eRER_1) not found, or not incremental.
+recompiling module HADDX1 because:
+	Generated file (D8md_1) not found, or not incremental.
+recompiling module HADDX2 because:
+	Generated file (oOC0_1) not found, or not incremental.
+100 of 333 modules done
+recompiling module HEAD2X16 because:
+	Generated file (cxO6_1) not found, or not incremental.
+recompiling module HEAD2X2 because:
+	Generated file (lm9s_1) not found, or not incremental.
+recompiling module HEAD2X32 because:
+	Generated file (bVwD_1) not found, or not incremental.
+recompiling module HEAD2X4 because:
+	Generated file (dD2x_1) not found, or not incremental.
+recompiling module HEAD2X8 because:
+	Generated file (vYh5_1) not found, or not incremental.
+recompiling module HEADX16 because:
+	Generated file (7So8_1) not found, or not incremental.
+recompiling module HEADX2 because:
+	Generated file (zDyz_1) not found, or not incremental.
+recompiling module HEADX32 because:
+	Generated file (Y1rQ_1) not found, or not incremental.
+recompiling module HEADX4 because:
+	Generated file (Rck8_1) not found, or not incremental.
+recompiling module HEADX8 because:
+	Generated file (ptTd_1) not found, or not incremental.
+recompiling module IBUFFX16 because:
+	Generated file (BuBH_1) not found, or not incremental.
+recompiling module IBUFFX2 because:
+	Generated file (6cbM_1) not found, or not incremental.
+recompiling module IBUFFX32 because:
+	Generated file (ub4d_1) not found, or not incremental.
+recompiling module IBUFFX4 because:
+	Generated file (ceFm_1) not found, or not incremental.
+recompiling module IBUFFX8 because:
+	Generated file (g4yM_1) not found, or not incremental.
+recompiling module INVX0 because:
+	Generated file (tlwT_1) not found, or not incremental.
+recompiling module INVX16 because:
+	Generated file (oqUp_1) not found, or not incremental.
+recompiling module INVX1 because:
+	Generated file (4Usc_1) not found, or not incremental.
+recompiling module INVX2 because:
+	Generated file (LYLG_1) not found, or not incremental.
+recompiling module INVX32 because:
+	Generated file (N6rA_1) not found, or not incremental.
+recompiling module INVX4 because:
+	Generated file (ZEjU_1) not found, or not incremental.
+recompiling module INVX8 because:
+	Generated file (7YQs_1) not found, or not incremental.
+recompiling module ISOLANDX1 because:
+	Generated file (PMJ8_1) not found, or not incremental.
+recompiling module ISOLANDX2 because:
+	Generated file (wiKP_1) not found, or not incremental.
+recompiling module ISOLANDX4 because:
+	Generated file (SbSq_1) not found, or not incremental.
+recompiling module ISOLANDX8 because:
+	Generated file (Y0Ey_1) not found, or not incremental.
+recompiling module ISOLORX1 because:
+	Generated file (bYP8_1) not found, or not incremental.
+recompiling module ISOLORX2 because:
+	Generated file (o5fq_1) not found, or not incremental.
+recompiling module ISOLORX4 because:
+	Generated file (Q9kR_1) not found, or not incremental.
+recompiling module ISOLORX8 because:
+	Generated file (6HDI_1) not found, or not incremental.
+recompiling module LARX1 because:
+	Generated file (vUbT_1) not found, or not incremental.
+recompiling module LARX2 because:
+	Generated file (2K3v_1) not found, or not incremental.
+recompiling module LASRNX1 because:
+	Generated file (Qib4_1) not found, or not incremental.
+recompiling module LASRNX2 because:
+	Generated file (XVU1_1) not found, or not incremental.
+recompiling module LASRQX1 because:
+	Generated file (ZgRJ_1) not found, or not incremental.
+recompiling module LASRQX2 because:
+	Generated file (meCc_1) not found, or not incremental.
+recompiling module LASRX1 because:
+	Generated file (PfQ6_1) not found, or not incremental.
+recompiling module LASRX2 because:
+	Generated file (UAS3_1) not found, or not incremental.
+recompiling module LASX1 because:
+	Generated file (Urcz_1) not found, or not incremental.
+recompiling module LASX2 because:
+	Generated file (dQJT_1) not found, or not incremental.
+recompiling module LATCHX1 because:
+	Generated file (aj1l_1) not found, or not incremental.
+recompiling module LATCHX2 because:
+	Generated file (xWkO_1) not found, or not incremental.
+recompiling module LNANDX1 because:
+	Generated file (E2nB_1) not found, or not incremental.
+recompiling module LNANDX2 because:
+	Generated file (ZAUF_1) not found, or not incremental.
+recompiling module LSDNENX1 because:
+	Generated file (Tdnv_1) not found, or not incremental.
+recompiling module LSDNENX2 because:
+	Generated file (qezI_1) not found, or not incremental.
+recompiling module LSDNENX4 because:
+	Generated file (yHfH_1) not found, or not incremental.
+recompiling module LSDNENX8 because:
+	Generated file (2V1y_1) not found, or not incremental.
+recompiling module LSDNENCLX1 because:
+	Generated file (lioc_1) not found, or not incremental.
+recompiling module LSDNENCLX2 because:
+	Generated file (GOjv_1) not found, or not incremental.
+150 of 333 modules done
+recompiling module LSDNENCLX4 because:
+	Generated file (qwvC_1) not found, or not incremental.
+recompiling module LSDNENCLX8 because:
+	Generated file (orq3_1) not found, or not incremental.
+recompiling module LSDNX1 because:
+	Generated file (VnDb_1) not found, or not incremental.
+recompiling module LSDNX2 because:
+	Generated file (uXTX_1) not found, or not incremental.
+recompiling module LSDNX4 because:
+	Generated file (EIkQ_1) not found, or not incremental.
+recompiling module LSDNX8 because:
+	Generated file (q2bV_1) not found, or not incremental.
+recompiling module LSUPENX1 because:
+	Generated file (BCoF_1) not found, or not incremental.
+recompiling module LSUPENX2 because:
+	Generated file (uihR_1) not found, or not incremental.
+recompiling module LSUPENX4 because:
+	Generated file (S0ar_1) not found, or not incremental.
+recompiling module LSUPENX8 because:
+	Generated file (aF6V_1) not found, or not incremental.
+recompiling module LSUPENCLX1 because:
+	Generated file (JGWK_1) not found, or not incremental.
+recompiling module LSUPENCLX2 because:
+	Generated file (kNGY_1) not found, or not incremental.
+recompiling module LSUPENCLX4 because:
+	Generated file (omR5_1) not found, or not incremental.
+recompiling module LSUPENCLX8 because:
+	Generated file (0KdB_1) not found, or not incremental.
+recompiling module LSUPX1 because:
+	Generated file (hjmB_1) not found, or not incremental.
+recompiling module LSUPX2 because:
+	Generated file (81pz_1) not found, or not incremental.
+recompiling module LSUPX4 because:
+	Generated file (KQsc_1) not found, or not incremental.
+recompiling module LSUPX8 because:
+	Generated file (gW0k_1) not found, or not incremental.
+recompiling module MUX21X1 because:
+	Generated file (0S7H_1) not found, or not incremental.
+recompiling module MUX21X2 because:
+	Generated file (TMKJ_1) not found, or not incremental.
+recompiling module MUX41X1 because:
+	Generated file (ssdX_1) not found, or not incremental.
+recompiling module MUX41X2 because:
+	Generated file (v5DA_1) not found, or not incremental.
+recompiling module NAND2X0 because:
+	Generated file (EbvB_1) not found, or not incremental.
+recompiling module NAND2X1 because:
+	Generated file (FuVr_1) not found, or not incremental.
+recompiling module NAND2X2 because:
+	Generated file (S1xW_1) not found, or not incremental.
+recompiling module NAND2X4 because:
+	Generated file (K6uy_1) not found, or not incremental.
+recompiling module NAND3X0 because:
+	Generated file (Tt7R_1) not found, or not incremental.
+recompiling module NAND3X1 because:
+	Generated file (abn7_1) not found, or not incremental.
+recompiling module NAND3X2 because:
+	Generated file (TaDl_1) not found, or not incremental.
+recompiling module NAND3X4 because:
+	Generated file (3iY5_1) not found, or not incremental.
+recompiling module NAND4X0 because:
+	Generated file (agHv_1) not found, or not incremental.
+recompiling module NAND4X1 because:
+	Generated file (NfeF_1) not found, or not incremental.
+recompiling module NBUFFX16 because:
+	Generated file (IKwe_1) not found, or not incremental.
+recompiling module NBUFFX2 because:
+	Generated file (ACHm_1) not found, or not incremental.
+recompiling module NBUFFX32 because:
+	Generated file (xmZA_1) not found, or not incremental.
+recompiling module NBUFFX4 because:
+	Generated file (coEJ_1) not found, or not incremental.
+recompiling module NBUFFX8 because:
+	Generated file (cqqw_1) not found, or not incremental.
+recompiling module NMT1 because:
+	Generated file (rgUg_1) not found, or not incremental.
+recompiling module NMT2 because:
+	Generated file (GHqi_1) not found, or not incremental.
+recompiling module NMT3 because:
+	Generated file (xgKU_1) not found, or not incremental.
+recompiling module NOR2X0 because:
+	Generated file (uTec_1) not found, or not incremental.
+recompiling module NOR2X1 because:
+	Generated file (zOLn_1) not found, or not incremental.
+recompiling module NOR2X2 because:
+	Generated file (EiSp_1) not found, or not incremental.
+recompiling module NOR2X4 because:
+	Generated file (4cPE_1) not found, or not incremental.
+recompiling module NOR3X0 because:
+	Generated file (rkxO_1) not found, or not incremental.
+recompiling module NOR3X1 because:
+	Generated file (oUgy_1) not found, or not incremental.
+recompiling module NOR3X2 because:
+	Generated file (vtqq_1) not found, or not incremental.
+recompiling module NOR3X4 because:
+	Generated file (zo0x_1) not found, or not incremental.
+recompiling module NOR4X0 because:
+	Generated file (QAOr_1) not found, or not incremental.
+recompiling module NOR4X1 because:
+	Generated file (V5eg_1) not found, or not incremental.
+200 of 333 modules done
+recompiling module OA21X1 because:
+	Generated file (505d_1) not found, or not incremental.
+recompiling module OA21X2 because:
+	Generated file (Ih3w_1) not found, or not incremental.
+recompiling module OA221X1 because:
+	Generated file (Ci0R_1) not found, or not incremental.
+recompiling module OA221X2 because:
+	Generated file (JLeU_1) not found, or not incremental.
+recompiling module OA222X1 because:
+	Generated file (9qGq_1) not found, or not incremental.
+recompiling module OA222X2 because:
+	Generated file (EJC2_1) not found, or not incremental.
+recompiling module OA22X1 because:
+	Generated file (yZ5Q_1) not found, or not incremental.
+recompiling module OA22X2 because:
+	Generated file (bDEI_1) not found, or not incremental.
+recompiling module OAI21X1 because:
+	Generated file (a7PB_1) not found, or not incremental.
+recompiling module OAI21X2 because:
+	Generated file (7XDI_1) not found, or not incremental.
+recompiling module OAI221X1 because:
+	Generated file (khca_1) not found, or not incremental.
+recompiling module OAI221X2 because:
+	Generated file (rcys_1) not found, or not incremental.
+recompiling module OAI222X1 because:
+	Generated file (LFkI_1) not found, or not incremental.
+recompiling module OAI222X2 because:
+	Generated file (WFvA_1) not found, or not incremental.
+recompiling module OAI22X1 because:
+	Generated file (RfK9_1) not found, or not incremental.
+recompiling module OAI22X2 because:
+	Generated file (izdP_1) not found, or not incremental.
+recompiling module OR2X1 because:
+	Generated file (zT05_1) not found, or not incremental.
+recompiling module OR2X2 because:
+	Generated file (utln_1) not found, or not incremental.
+recompiling module OR2X4 because:
+	Generated file (aCds_1) not found, or not incremental.
+recompiling module OR3X1 because:
+	Generated file (MWuo_1) not found, or not incremental.
+recompiling module OR3X2 because:
+	Generated file (LBkZ_1) not found, or not incremental.
+recompiling module OR3X4 because:
+	Generated file (9GNW_1) not found, or not incremental.
+recompiling module OR4X1 because:
+	Generated file (tzYP_1) not found, or not incremental.
+recompiling module OR4X2 because:
+	Generated file (W55D_1) not found, or not incremental.
+recompiling module OR4X4 because:
+	Generated file (CeBz_1) not found, or not incremental.
+recompiling module PGX1 because:
+	Generated file (xn0V_1) not found, or not incremental.
+recompiling module PGX2 because:
+	Generated file (6msH_1) not found, or not incremental.
+recompiling module PGX4 because:
+	Generated file (y91O_1) not found, or not incremental.
+recompiling module PMT1 because:
+	Generated file (WdLm_1) not found, or not incremental.
+recompiling module PMT2 because:
+	Generated file (p1e8_1) not found, or not incremental.
+recompiling module PMT3 because:
+	Generated file (88jP_1) not found, or not incremental.
+recompiling module SDFFARX1 because:
+	Generated file (KmZg_1) not found, or not incremental.
+recompiling module SDFFARX2 because:
+	Generated file (HsLK_1) not found, or not incremental.
+recompiling module SDFFASRSX1 because:
+	Generated file (h1pG_1) not found, or not incremental.
+recompiling module SDFFASRSX2 because:
+	Generated file (k3Je_1) not found, or not incremental.
+recompiling module SDFFASRX1 because:
+	Generated file (cfmh_1) not found, or not incremental.
+recompiling module SDFFASRX2 because:
+	Generated file (ziyu_1) not found, or not incremental.
+recompiling module SDFFASX1 because:
+	Generated file (Zotz_1) not found, or not incremental.
+recompiling module SDFFASX2 because:
+	Generated file (WzJm_1) not found, or not incremental.
+recompiling module SDFFNARX1 because:
+	Generated file (klNW_1) not found, or not incremental.
+recompiling module SDFFNARX2 because:
+	Generated file (DBhS_1) not found, or not incremental.
+recompiling module SDFFNASRX1 because:
+	Generated file (zFDA_1) not found, or not incremental.
+recompiling module SDFFNASRX2 because:
+	Generated file (yvhC_1) not found, or not incremental.
+recompiling module SDFFNASX1 because:
+	Generated file (PujU_1) not found, or not incremental.
+recompiling module SDFFNASX2 because:
+	Generated file (kaHH_1) not found, or not incremental.
+recompiling module SDFFNX1 because:
+	Generated file (I3fP_1) not found, or not incremental.
+recompiling module SDFFNX2 because:
+	Generated file (9uIM_1) not found, or not incremental.
+recompiling module SDFFSSRX1 because:
+	Generated file (enhL_1) not found, or not incremental.
+recompiling module SDFFSSRX2 because:
+	Generated file (HETh_1) not found, or not incremental.
+recompiling module SDFFX1 because:
+	Generated file (3gir_1) not found, or not incremental.
+250 of 333 modules done
+recompiling module SDFFX2 because:
+	Generated file (ODM8_1) not found, or not incremental.
+recompiling module SHFILL2 because:
+	Generated file (KSuO_1) not found, or not incremental.
+recompiling module SHFILL3 because:
+	Generated file (V8Kz_1) not found, or not incremental.
+recompiling module SHFILL1 because:
+	Generated file (ZbEe_1) not found, or not incremental.
+recompiling module SHFILL64 because:
+	Generated file (QtnD_1) not found, or not incremental.
+recompiling module SHFILL128 because:
+	Generated file (8c2h_1) not found, or not incremental.
+recompiling module TIEH because:
+	Generated file (UNq4_1) not found, or not incremental.
+recompiling module TIEL because:
+	Generated file (kCNR_1) not found, or not incremental.
+recompiling module TNBUFFX16 because:
+	Generated file (gPuL_1) not found, or not incremental.
+recompiling module TNBUFFX1 because:
+	Generated file (vPpk_1) not found, or not incremental.
+recompiling module TNBUFFX2 because:
+	Generated file (qF9n_1) not found, or not incremental.
+recompiling module TNBUFFX32 because:
+	Generated file (x0ui_1) not found, or not incremental.
+recompiling module TNBUFFX4 because:
+	Generated file (8nZB_1) not found, or not incremental.
+recompiling module TNBUFFX8 because:
+	Generated file (mIKI_1) not found, or not incremental.
+recompiling module XNOR2X1 because:
+	Generated file (aTKw_1) not found, or not incremental.
+recompiling module XNOR2X2 because:
+	Generated file (hwso_1) not found, or not incremental.
+recompiling module XNOR3X1 because:
+	Generated file (HzTp_1) not found, or not incremental.
+recompiling module XNOR3X2 because:
+	Generated file (M6zr_1) not found, or not incremental.
+recompiling module XOR2X1 because:
+	Generated file (Gcok_1) not found, or not incremental.
+recompiling module XOR2X2 because:
+	Generated file (1sbr_1) not found, or not incremental.
+recompiling module XOR3X1 because:
+	Generated file (vSue_1) not found, or not incremental.
+recompiling module XOR3X2 because:
+	Generated file (mMdb_1) not found, or not incremental.
+recompiling module RDFFARX1 because:
+	Generated file (mokK_1) not found, or not incremental.
+recompiling module RDFFARX2 because:
+	Generated file (dRyN_1) not found, or not incremental.
+recompiling module RDFFNARX1 because:
+	Generated file (ipvH_1) not found, or not incremental.
+recompiling module RDFFNARX2 because:
+	Generated file (VHVE_1) not found, or not incremental.
+recompiling module RSDFFARX1 because:
+	Generated file (GpZt_1) not found, or not incremental.
+recompiling module RSDFFARX2 because:
+	Generated file (38hw_1) not found, or not incremental.
+recompiling module RSDFFNARX1 because:
+	Generated file (Xlpc_1) not found, or not incremental.
+recompiling module RSDFFNARX2 because:
+	Generated file (Q2NO_1) not found, or not incremental.
+recompiling module RDFFNX1 because:
+	Generated file (LKrq_1) not found, or not incremental.
+recompiling module RDFFNX2 because:
+	Generated file (qZYu_1) not found, or not incremental.
+recompiling module RDFFX1 because:
+	Generated file (LFcE_1) not found, or not incremental.
+recompiling module RDFFX2 because:
+	Generated file (6e8r_1) not found, or not incremental.
+recompiling module RSDFFNX1 because:
+	Generated file (bXST_1) not found, or not incremental.
+recompiling module RSDFFNX2 because:
+	Generated file (WAiv_1) not found, or not incremental.
+recompiling module RSDFFX1 because:
+	Generated file (84uG_1) not found, or not incremental.
+recompiling module RSDFFX2 because:
+	Generated file (fhBJ_1) not found, or not incremental.
+recompiling module RDFFNSRASX1 because:
+	Generated file (PkOT_1) not found, or not incremental.
+recompiling module RDFFNSRASX2 because:
+	Generated file (mtmz_1) not found, or not incremental.
+recompiling module RDFFSRARX1 because:
+	Generated file (0e37_1) not found, or not incremental.
+recompiling module RDFFSRARX2 because:
+	Generated file (fFW9_1) not found, or not incremental.
+recompiling module RDFFSRASRX1 because:
+	Generated file (55dv_1) not found, or not incremental.
+recompiling module RDFFSRASRX2 because:
+	Generated file (CNZ2_1) not found, or not incremental.
+recompiling module RDFFSRASX1 because:
+	Generated file (70lR_1) not found, or not incremental.
+recompiling module RDFFSRASX2 because:
+	Generated file (60j3_1) not found, or not incremental.
+recompiling module RSDFFNSRARX1 because:
+	Generated file (tD6q_1) not found, or not incremental.
+recompiling module RSDFFNSRARX2 because:
+	Generated file (a2xo_1) not found, or not incremental.
+recompiling module RSDFFNSRASRX1 because:
+	Generated file (fOdO_1) not found, or not incremental.
+recompiling module RSDFFNSRASRX2 because:
+	Generated file (AigM_1) not found, or not incremental.
+300 of 333 modules done
+recompiling module RSDFFNSRASRNX1 because:
+	Generated file (AnXl_1) not found, or not incremental.
+recompiling module RSDFFNSRASRNX2 because:
+	Generated file (dgMt_1) not found, or not incremental.
+recompiling module RSDFFNSRASRQX1 because:
+	Generated file (5cXW_1) not found, or not incremental.
+recompiling module RSDFFNSRASRQX2 because:
+	Generated file (69dI_1) not found, or not incremental.
+recompiling module RSDFFSRARX1 because:
+	Generated file (1vL1_1) not found, or not incremental.
+recompiling module RSDFFSRARX2 because:
+	Generated file (ChAZ_1) not found, or not incremental.
+recompiling module RSDFFSRASRX1 because:
+	Generated file (iuRm_1) not found, or not incremental.
+recompiling module RSDFFSRASRX2 because:
+	Generated file (FSgi_1) not found, or not incremental.
+recompiling module RDFFNSRARX1 because:
+	Generated file (4nMv_1) not found, or not incremental.
+recompiling module RDFFNSRARX2 because:
+	Generated file (RART_1) not found, or not incremental.
+recompiling module RDFFNSRASRQX1 because:
+	Generated file (Hmb3_1) not found, or not incremental.
+recompiling module RDFFNSRASRQX2 because:
+	Generated file (QJTA_1) not found, or not incremental.
+recompiling module RDFFNSRASRNX1 because:
+	Generated file (Albf_1) not found, or not incremental.
+recompiling module RDFFNSRASRNX2 because:
+	Generated file (TeVi_1) not found, or not incremental.
+recompiling module RDFFNSRASRX1 because:
+	Generated file (E3Th_1) not found, or not incremental.
+recompiling module RDFFNSRASRX2 because:
+	Generated file (tWDk_1) not found, or not incremental.
+recompiling module RDFFNSRX1 because:
+	Generated file (gHpy_1) not found, or not incremental.
+recompiling module RDFFNSRX2 because:
+	Generated file (NY1X_1) not found, or not incremental.
+recompiling module RDFFSRSSRX1 because:
+	Generated file (vPaX_1) not found, or not incremental.
+recompiling module RDFFSRSSRX2 because:
+	Generated file (Ujwb_1) not found, or not incremental.
+recompiling module RDFFSRX1 because:
+	Generated file (ybv5_1) not found, or not incremental.
+recompiling module RDFFSRX2 because:
+	Generated file (5gJz_1) not found, or not incremental.
+recompiling module RSDFFNSRASX1 because:
+	Generated file (yZRf_1) not found, or not incremental.
+recompiling module RSDFFNSRASX2 because:
+	Generated file (tmen_1) not found, or not incremental.
+recompiling module RSDFFNSRX1 because:
+	Generated file (dywj_1) not found, or not incremental.
+recompiling module RSDFFNSRX2 because:
+	Generated file (aj7n_1) not found, or not incremental.
+recompiling module RSDFFSRASX1 because:
+	Generated file (enRU_1) not found, or not incremental.
+recompiling module RSDFFSRASX2 because:
+	Generated file (zDL2_1) not found, or not incremental.
+recompiling module RSDFFSRSSRX1 because:
+	Generated file (arZz_1) not found, or not incremental.
+recompiling module RSDFFSRSSRX2 because:
+	Generated file (H8nl_1) not found, or not incremental.
+recompiling module RSDFFSRX1 because:
+	Generated file (oQdB_1) not found, or not incremental.
+recompiling module RSDFFSRX2 because:
+	Generated file (Vbv4_1) not found, or not incremental.
+recompiling module tb_alu because:
+	This module or some inlined child module(s) has/have been modified.
+All of 333 modules done
+if [ -x ../simv ]; then chmod -x ../simv; fi
+g++  -o ../simv     -Wl,-whole-archive    -Wl,-no-whole-archive  _vcsobj_1_1.o  5NrI_d.o \
+5NrIB_d.o SIM_l.o     rmapats_mop.o rmapats.o       /eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libzerosoft_rt_stubs.so \
+/eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libvirsim.so /eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/liberrorinf.so \
+/eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libsnpsmalloc.so     /eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libvcsnew.so \
+/eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libvcsucli.so /eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libuclinative.so \
+/eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/vcs_save_restore_new.o -ldl -lm \
+-lc -lpthread -ldl 
+../simv up to date
+Command: ./simv +neg_tchk -a vcs.log
+Chronologic VCS simulator copyright 1991-2013
+Contains Synopsys proprietary information.
+Compiler version H-2013.06-SP1_Full64; Runtime version H-2013.06-SP1_Full64;  Sep 13 11:13 2016
+Doing SDF annotation ...... Done
+VCD+ Writer H-2013.06-SP1_Full64 Copyright (c) 1991-2013 by Synopsys Inc.
+$finish called from file "tb_alu.v", line 164.
+$finish at simulation time               330000
+           V C S   S i m u l a t i o n   R e p o r t 
+Time: 330000 ps
+CPU Time:      0.310 seconds;       Data structure size:   0.5Mb
+Tue Sep 13 11:13:49 2016
+CPU time: 3.478 seconds to compile + .111 seconds to elab + .266 seconds to link + .372 seconds in simulation

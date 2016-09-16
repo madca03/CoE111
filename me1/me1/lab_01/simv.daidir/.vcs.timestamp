@@ -1,0 +1,94 @@
+0 
+27
++cli+1
++itf+/eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/vcsdp.tab
++memcbk
++vcsd
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -O -I/eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mldflags=
+-Mobjects= /eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libvirsim.so /eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/liberrorinf.so /eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libsnpsmalloc.so
+-Mout=simv
+-Msaverestoreobj=/eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl -lm
+-Mvcsaceobjs=
+-Xcbug=0x1
+-debug=1
+-full64
+-gen_obj
+-pp_used
+/eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/amd64/bin/vcs1
+tb_updown.v
+updown.v
+53
+sysc_uni_pwd=/eeei/home/user/student/Documents/CoE 111/me1/lab_01
+XMODIFIERS=@im=none
+XDG_SESSION_COOKIE=7ad67ed97662f1189d264a8400000029-1471912638.792084-2101091593
+XAUTHORITY=/var/run/gdm/auth-for-student-EEPUws/database
+WINDOWPATH=1
+VMR_MODE_FLAG=64
+VCS_MX_HOME_INTERNAL=1
+VCS_MX=/eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/amd64/bin
+VCS_MODE_FLAG=64
+VCS_HOME=/eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/
+VCS_DEPTH=0
+VCS_BIN=/eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/bin
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=amd64
+USERNAME=student
+UNAME=/bin/uname
+TOOL_HOME=/eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/amd64
+SYN_BIN=/eeei/tools/synopsys/syn/I-2013.12/bin
+SYN=/eeei/tools/synopsys/syn/I-2013.12/bin
+SSH_AUTH_SOCK=/tmp/keyring-DAZ0DL/socket.ssh
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/3463,unix/unix:/tmp/.ICE-unix/3463
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QT_IM_MODULE=xim
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+OVA_UUM=0
+ORBIT_SOCKETDIR=/tmp/orbit-student
+MVTOOLS=/eeei/tools/synopsys/mvtools/I-2014.03/bin
+MATLABBIN=/eeei/tools/MATLAB/R2011a/bin/
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+IMSETTINGS_MODULE=none
+IMSETTINGS_INTEGRATE_DESKTOP=yes
+ICCOMPILER=/eeei/tools/synopsys/icc/I-2013.12-SP2/bin
+HISTCONTROL=ignoredups
+G_BROKEN_FILENAMES=1
+GTK_RC_FILES=/etc/gtk/gtkrc:/eeei/home/user/student/.gtkrc-1.2-gnome2
+GNOME_KEYRING_SOCKET=/tmp/keyring-DAZ0DL/socket
+GNOME_KEYRING_PID=3453
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GIO_LAUNCHED_DESKTOP_FILE_PID=4149
+GIO_LAUNCHED_DESKTOP_FILE=/usr/share/applications/gnome-terminal.desktop
+GDM_LANG=en_US.UTF-8
+GDM_KEYBOARD_LAYOUT=us
+GDMSESSION=gnome
+FORMALITY=/eeei/tools/synopsys/fm/I-2013.12-SP2/bin
+DESKTOP_SESSION=gnome
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-lSYu9LKcje,guid=23f922991d764d01fcae11ad00000067
+CVS_RSH=ssh
+COLORTERM=gnome-terminal
+0
+3
+1396498414 tb_updown.v
+1396498409 updown.v
+1385611634 /eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/vcsdp.tab
+4
+0 
+1385615966 /eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libvirsim.so
+1385615701 /eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/liberrorinf.so
+1385615452 /eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libsnpsmalloc.so
+1471913878 simv.daidir

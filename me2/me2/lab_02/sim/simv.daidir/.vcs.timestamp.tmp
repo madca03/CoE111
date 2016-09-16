@@ -1,0 +1,102 @@
+1        
+0 ../mapped/updown_mapped.sdf_c
+32
++cli+1
++itf+/eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/vcsdp.tab
++memcbk
++neg_tchk
++vcsd
++vpi
+-Mamsrun=
+-Masflags=
+-Mcc=gcc
+-Mcfl= -pipe -O -I/eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/include
+-Mcplusplus=g++
+-Mcrt0=
+-Mcrtn=
+-Mcsrc=
+-Mldflags=
+-Mobjects= /eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libvirsim.so /eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/liberrorinf.so /eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libsnpsmalloc.so
+-Mout=simv
+-Msaverestoreobj=/eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/vcs_save_restore_new.o
+-Msyslibs=-ldl -lm
+-Mvcsaceobjs=
+-Xcbug=0x1
+-Xvcs_run_simv=1
+-debug=1
+-full64
+-gen_obj
+-l
+-pp_used
+../lib/saed90nm.v
+../mapped/updown_mapped.v
+/eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/amd64/bin/vcs1
+tb_updown.v
+vcs.log
+54
+sysc_uni_pwd=/eeei/home/user/student/Documents/CoE111_201358222/me2/lab_02/sim
+XMODIFIERS=@im=none
+XDG_SESSION_COOKIE=7ad67ed97662f1189d264a8400000029-1472517655.352716-848254845
+XAUTHORITY=/var/run/gdm/auth-for-student-OHztWR/database
+WINDOWPATH=1
+VMR_MODE_FLAG=64
+VCS_MX_HOME_INTERNAL=1
+VCS_MX=/eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/amd64/bin
+VCS_MODE_FLAG=64
+VCS_LOG_FILE=vcs.log
+VCS_HOME=/eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/
+VCS_DEPTH=0
+VCS_BIN=/eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/bin
+VCS_ARG_ADDED_FOR_TMP=1
+VCS_ARCH=amd64
+USERNAME=student
+UNAME=/bin/uname
+TOOL_HOME=/eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/amd64
+SYN_BIN=/eeei/tools/synopsys/syn/I-2013.12/bin
+SYN=/eeei/tools/synopsys/syn/I-2013.12/bin
+SSH_AUTH_SOCK=/tmp/keyring-UdgQCi/socket.ssh
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+SESSION_MANAGER=local/unix:@/tmp/.ICE-unix/3699,unix/unix:/tmp/.ICE-unix/3699
+SCRNAME=vcs
+SCRIPT_NAME=vcs
+QT_IM_MODULE=xim
+QTLIB=/usr/lib64/qt-3.3/lib
+QTINC=/usr/lib64/qt-3.3/include
+QTDIR=/usr/lib64/qt-3.3
+OVA_UUM=0
+ORBIT_SOCKETDIR=/tmp/orbit-student
+MVTOOLS=/eeei/tools/synopsys/mvtools/I-2014.03/bin
+MATLABBIN=/eeei/tools/MATLAB/R2011a/bin/
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LC_ALL=C
+IMSETTINGS_MODULE=none
+IMSETTINGS_INTEGRATE_DESKTOP=yes
+ICCOMPILER=/eeei/tools/synopsys/icc/I-2013.12-SP2/bin
+HISTCONTROL=ignoredups
+G_BROKEN_FILENAMES=1
+GTK_RC_FILES=/etc/gtk/gtkrc:/eeei/home/user/student/.gtkrc-1.2-gnome2
+GNOME_KEYRING_SOCKET=/tmp/keyring-UdgQCi/socket
+GNOME_KEYRING_PID=3689
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GIO_LAUNCHED_DESKTOP_FILE_PID=5396
+GIO_LAUNCHED_DESKTOP_FILE=/usr/share/applications/gnome-terminal.desktop
+GDM_LANG=en_US.UTF-8
+GDM_KEYBOARD_LAYOUT=us
+GDMSESSION=gnome
+FORMALITY=/eeei/tools/synopsys/fm/I-2013.12-SP2/bin
+DESKTOP_SESSION=gnome
+DBUS_SESSION_BUS_ADDRESS=unix:abstract=/tmp/dbus-z6DFAjH5n1,guid=bb86f6471a69c85fdfb4cc0000000097
+CVS_RSH=ssh
+COLORTERM=gnome-terminal
+0
+5
+1472520962 ../mapped/updown_mapped.sdf
+1472521733 tb_updown.v
+1409007543 ../lib/saed90nm.v
+1472521860 ../mapped/updown_mapped.v
+1385611634 /eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/vcsdp.tab
+4
+0 
+1385615966 /eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libvirsim.so
+1385615701 /eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/liberrorinf.so
+1385615452 /eeei/tools/synopsys/vcs-mx/H-2013.06-SP1/amd64/lib/libsnpsmalloc.so

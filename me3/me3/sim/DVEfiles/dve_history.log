@@ -1,0 +1,89 @@
+# Preference setting overrides
+gui_create_pref_key -category {Globals} -key {load_detail_for_funcov} -value_type {bool} -value {false}
+
+# State setting overrides
+gui_state_default_create -off -ini
+gui_set_state_value -category Globals -key recent_databases -value {{gui_open_db -file /eeei/home/user/student/Documents/CoE111_201358222/me3/sim/tb_mult.vpd -design V1} {gui_open_db -file /eeei/home/user/student/111/lab3/lab_03/rtl/tb_multiplier.vpd -design V1} {gui_open_db -file /eeei/home/user/student/111/lab3/lab_03/rtl/tb_multiplier.vpd -design V2} {gui_open_db -file /eeei/home/user/student/Desktop/24577/lab_02/sim/tb_updown.vpd -design V1} {gui_open_db -file /eeei/home/user/student/Desktop/tb_updown.vpd -design V1}}
+gui_set_state_value -category Layout -key child_console_size_x -value 849
+gui_set_state_value -category Layout -key child_console_size_y -value 170
+gui_set_state_value -category Layout -key child_data_size_x -value 158
+gui_set_state_value -category Layout -key child_data_size_y -value 449
+gui_set_state_value -category Layout -key child_driver_size_x -value 1065
+gui_set_state_value -category Layout -key child_driver_size_y -value 179
+gui_set_state_value -category Layout -key child_hier_col3 -value {-1}
+gui_set_state_value -category Layout -key child_hier_colhier -value 141
+gui_set_state_value -category Layout -key child_hier_colpd -value 0
+gui_set_state_value -category Layout -key child_hier_coltype -value 101
+gui_set_state_value -category Layout -key child_hier_size_x -value 241
+gui_set_state_value -category Layout -key child_hier_size_y -value 449
+gui_set_state_value -category Layout -key child_source_docknewline -value false
+gui_set_state_value -category Layout -key child_source_pos_x -value {-2}
+gui_set_state_value -category Layout -key child_source_pos_y -value {-15}
+gui_set_state_value -category Layout -key child_source_size_x -value 453
+gui_set_state_value -category Layout -key child_source_size_y -value 444
+gui_set_state_value -category Layout -key child_wave_colname -value 218
+gui_set_state_value -category Layout -key child_wave_colvalue -value 218
+gui_set_state_value -category Layout -key child_wave_left -value 441
+gui_set_state_value -category Layout -key child_wave_right -value 1077
+gui_set_state_value -category Layout -key main_pos_x -value 4
+gui_set_state_value -category Layout -key main_pos_y -value 128
+gui_set_state_value -category Layout -key main_size_x -value 853
+gui_set_state_value -category Layout -key main_size_y -value 870
+gui_set_state_value -category Layout -key stand_source_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_source_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_source_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_source_child_size_x -value 1070
+gui_set_state_value -category Layout -key stand_source_child_size_y -value 292
+gui_set_state_value -category Layout -key stand_wave_child_docknewline -value false
+gui_set_state_value -category Layout -key stand_wave_child_pos_x -value {-2}
+gui_set_state_value -category Layout -key stand_wave_child_pos_y -value {-15}
+gui_set_state_value -category Layout -key stand_wave_child_size_x -value 1528
+gui_set_state_value -category Layout -key stand_wave_child_size_y -value 700
+gui_set_state_value -category Layout -key stand_wave_top_pos_x -value 74
+gui_set_state_value -category Layout -key stand_wave_top_pos_y -value 67
+gui_set_state_value -category Layout -key stand_wave_top_size_x -value 1597
+gui_set_state_value -category Layout -key stand_wave_top_size_y -value 870
+gui_create_state_key -category FindDialog -key m_pMatchCase -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pMatchWord -value_type bool -value false
+gui_create_state_key -category FindDialog -key m_pUseCombo -value_type string -value {}
+gui_create_state_key -category FindDialog -key m_pWrapAround -value_type bool -value true
+gui_state_default_create -off
+
+# Begin command logging
+gui_open_db -file /eeei/home/user/student/Documents/CoE111_201358222/me3/sim/tb_mult.vpd -design V1
+gui_list_select -id Hier.1 -current_item_name tb_mult -current_item_type Scope  -selected  { tb_mult   }
+gui_list_select -id Data.1 -selected  { {tb_mult.a[7:0]}   }
+gui_list_select_all -id Data.1
+gui_open_window Wave
+gui_list_add -id Wave.1 -from Data.1 { {tb_mult.a[7:0]} {tb_mult.b[7:0]} {tb_mult.product[15:0]} } -insertionbar
+gui_zoom -window Wave.1 -full
+gui_list_select -id Wave.1 -selected  { {tb_mult.a[7:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_mult.a[7:0]}  {tb_mult.b[7:0]}   }
+gui_list_select -id Wave.1 -selected  { {tb_mult.a[7:0]}  {tb_mult.b[7:0]}  {tb_mult.product[15:0]}   }
+gui_list_set_selected_property -id Wave.1 -radix decimal
+gui_list_set_selected_property -id Wave.1 -radix twosComplement
+gui_marker_move -id  Wave.1 C1 36932
+gui_marker_move -id  Wave.1 C1 87311
+gui_marker_move -id  Wave.1 C1 58144
+gui_marker_move -id  Wave.1 C1 49811
+gui_marker_move -id  Wave.1 C1 36174
+gui_marker_move -id  Wave.1 C1 83902
+gui_marker_move -id  Wave.1 C1 38258
+gui_marker_move -id  Wave.1 C1 71591
+gui_marker_move -id  Wave.1 C1 124432
+gui_marker_move -id  Wave.1 C1 85795
+gui_marker_move -id  Wave.1 C1 167803
+gui_marker_move -id  Wave.1 C1 133712
+gui_marker_move -id  Wave.1 C1 76326
+gui_marker_select -id  Wave.1 { C1 }
+gui_zoom -window  Wave.1  -full
+gui_wv_zoom_timerange -id  Wave.1 0 11174
+gui_wv_zoom_timerange -id  Wave.1 0 2042
+gui_zoom -window Wave.1 -full
+gui_wv_zoom_timerange -id  Wave.1 47538 53788
+gui_wv_zoom_timerange -id  Wave.1 49728 53303
+gui_zoom -window Wave.1 -full
+gui_wv_zoom_timerange -id  Wave.1 0 8333
+gui_wv_zoom_timerange -id  Wave.1 0 2131
+gui_zoom -window Wave.1 -full
+gui_close_window -window TopLevel.2
